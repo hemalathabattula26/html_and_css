@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task</title>
+        <style>
+            body{
+                padding: 5px;
+            }
+            .navbar{
+                display: flex;
+                width: 90%;
+                height: fit-content;
+                margin: auto;
+                position: sticky;
+                top: 15px;
+                z-index: 1;
+            }
+            .img{
+                font-size: 2.4em;
+                font-family: Impact;
+                letter-spacing: 3px;
+                width: fit-content;
+                height: fit-content;
+                float: left;
+                background: linear-gradient(to right,red,blue,green,aqua);
+                -webkit-background-clip: text;
+                color: transparent;
+                animation: rotate 3s ease-in-out forwards 1;
+            }
+            @keyframes rotate{
+                0% {
+                    transform: rotate(0deg);
+                    scale: 0;
+                }
+                100% {
+                    transform: rotateX(3600deg) rotateY(3600deg) rotate(3600deg);
+                    scale: 1;
+                }
+            }
+            a{
+                text-decoration: none;
+            }
+            .links{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 60%;
+                font-family: 'Lucida Sans';
+                margin-left: auto;
+            }
+            .links>a{
+                width: fit-content;
+                height: fit-content;
+                padding: 5px;
+                color: grey;
+            }
+            .links>a:hover{
+                background-color: grey;
+                display: block;
+                color: white;
+                border-radius: 50%;
+            }
+            .content{
+                margin: auto;
+                border: 5px inset aqua;
+                box-shadow: 5px 5px 20px;
+                background-image: url('carimage2.webp');
+                background-repeat: no-repeat;
+                background-size: 100% 600px;
+                background-position-y: -150px;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 90%;
+                height: 400px;
+            }
+            .content p{
+                color: rgb(198, 198, 198);
+                font-size: 3em;
+                text-transform: uppercase;
+                text-shadow: 4px 4px 5px;
+                width: fit-content;
+            }
+            .content p:nth-child(2){
+                margin: -18px;
+                font-size: 8em;
+                font-family: algerian;
+                color: rgb(255, 255, 255);
+            }
+            .content p:nth-child(3){
+                color: white;
+                text-shadow: none;
+                font-size: 2em;
+                font-family: Arial, Helvetica, sans-serif;
+                color: hsl(0, 0%, 100%);
+            }
+            .about{
+                width: 90%;
+                margin: auto;
+            }
+            .about p,.edu p{
+                position: relative;
+                top: 25px;
+                color: grey;
+                display: block;
+                padding: 5px;
+                width: fit-content;
+                margin: auto;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .about hr,.edu hr{
+                opacity: .1;
+                border: .1px solid black;
+            }
+            .aboutme{
+                width: 90%;
+                height: fit-content;
+                padding: 20px;
+                display: flex;
+                margin: auto;
+                align-items: center;
+                justify-content: space-around;
+                text-align: justify;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            .text,.image{
+                width: 500px;
+                height: fit-content;
+            }
+            .text>p{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: rgb(163, 106, 106);
+            }
+            .image{
+                border: 5px outset grey;
+                border-radius: 10px 10px 0 0;
+                box-shadow: inset 5px 5px 40px grey;
+                background-image: url('ME.jpg');
+                background-size: 300px 300px;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                width: 300px;
+                height: 300px;
+            }
+            .image .social{
+                width: 100%;
+                height: 50px;
+                background-color: red;
+                opacity: .5;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .social a img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+            .edu{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 90%;
+                height: fit-content;
+                margin: auto;
+            }
+            .table{
+                width: 100%;
+                margin: auto;
+            }
+
+            .edu .table table{
+                text-align: center;
+                border-collapse: collapse;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-left: none;
+                border-right: none;
+                width: 100%;
+                height: fit-content;
+                margin-top: 20px;
+            }
+            .edu table th,td{
+                padding: 5px;
+            }
+            .edu table th{
+                background-color: aqua;
+            }
+            #edu{
+                margin: 0 auto 20px auto;
+            }
+            .skills{
+                position: relative;
+                top: 20px;
+                width: 70%;
+                display: flex;
+                margin: auto;
+                flex-wrap: wrap;
+                height: fit-content;
+                justify-content: space-evenly;
+                text-transform: uppercase;
+                align-items: center;
+                font-weight: bold;
+            }
+            .skills div{
+                width: 400px;
+                height: 5px;
+                border: 1px solid black;
+                display: flex;
+                align-items: center;
+                border-radius: 5px;
+                margin: 15px;
+                box-shadow: .5px .5px 15px;
+            }
+            .skills div::before{
+                position: relative;
+                top: -20px;
+                font-family: algerian;
+                color: grey;
+                text-align: end;
+            }
+            .skills div:nth-child(1):before{content: 'HTML';}
+            .skills div:nth-child(2):before{content: 'CSS';}
+            .skills div:nth-child(3):before{content: 'JavaScript';}
+            .skills div:nth-child(4):before{content: 'PHP';}
+            .skills div:nth-child(5):before{content: 'BOOTSTRAP';}
+            .skills div:nth-child(6):before{content: 'communication';}
+            .skills div:nth-child(7):before{content: 'java';}
+            .skills div:nth-child(8):before{content: 'PYTHON';}
+            .s1{background: linear-gradient(to right,blue 0% 95%,white 95% 100%);}
+            .s2{background: linear-gradient(to right,blue 0% 70%,white 70% 100%);}
+            .s3{background: linear-gradient(to right,blue 0% 60%,white 60% 100%);}
+            .s4{background: linear-gradient(to right,blue 0% 75%,white 75% 100%);}
+            .s5{background: linear-gradient(to right,blue 0% 40%,white 40% 100%);}
+            .s6{background: linear-gradient(to right,blue 0% 92%,white 92% 100%);}
+            .s7{background: linear-gradient(to right,blue 0% 70%,white 70% 100%);}
+            .s8{background: linear-gradient(to right,blue 0% 79%,white 79% 100%);}
+            .languages{
+                width: 90%;
+                height: fit-content;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-evenly;
+                font-size: 1.5em;
+                flex-wrap: wrap;
+            }
+            .languages p{
+                width: 90px;
+                margin: 15px;
+                color: rgb(202, 96, 114);
+            }
+            .languages p:nth-child(1){
+                margin-right: 60px;
+            }
+            .profile{
+                width: 69.39%;
+                margin: auto;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 30px;
+                justify-content: center;
+            }
+            .profile div{
+                width: 250px;
+                height: 150px;
+                border: .5px solid grey;
+            }
+            .profile div:nth-child(1){
+                background-image: url('https://tse4.explicit.bing.net/th?id=OIP.Nx1Um01I5QAzOnA63m1oBAHaCl&pid=Api&P=0');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }.profile div:nth-child(2){
+                background-image: url('https://tse4.mm.bing.net/th?id=OIP.JmTY9yQFe9Zm_imAdXp4pgHaHa&pid=Api&P=0');
+                background-repeat: no-repeat;
+                background-size: 90% 100%;
+                background-position: center;
+            }.profile div:nth-child(3){
+                background-image: url('https://tse2.mm.bing.net/th?id=OIP.7OGU0tWrXdjKc04YeWpjVwAAAA&pid=Api&P=0');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }.profile div:nth-child(4){
+                background-image: url('https://tse4.mm.bing.net/th?id=OIP.GHPQTvkT3TqCadzvWvCZFgHaGs&pid=Api&P=0');
+                background-repeat: no-repeat;
+                background-size: 90% 90%;
+                background-position: center;
+            }.profile div:nth-child(5){
+                background-image: url('https://tse2.mm.bing.net/th?id=OIP.2TpEZfviTUtryFPoYG-9GwHaHa&pid=Api&P=0');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }.profile div:nth-child(6){
+                background-image: url('https://tse2.mm.bing.net/th?id=OIP.gB91MpXA_HuDMv9-OAPweAAAAA&pid=Api&P=0');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }.profile div:nth-child(7){
+                background-image: url('https://tse2.mm.bing.net/th?id=OIP.D9gRqb_QbY73c9dbIJR4bQHaEK&pid=Api&P=0');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }.profile div:nth-child(8){
+                background-image: url('https://tse2.mm.bing.net/th?id=OIP.i3BQ-iSz2ggNkTNpsavqLQAAAA&pid=Api&P=0');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            .portfolio{
+                margin: 30px auto;
+                width: 90%;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            .portfolio div{
+                width: 300px;
+                height: 200px;
+                margin: 10px;
+                background-size: 100% 100%;
+            }
+            .portfolio div:nth-child(1){background-image: url('https://tse2.mm.bing.net/th?id=OIP.1cXyJGkZJl9T5vVvgAcd0wHaEh&pid=Api&P=0');}
+            .portfolio div:nth-child(2){background-image: url('https://tse3.mm.bing.net/th?id=OIP.xYRnd2diWFA_64MTpjPlAAHaFE&pid=Api&P=0');}
+            .portfolio div:nth-child(3){background-image: url('https://tse2.mm.bing.net/th?id=OIP.4H1VkCLqGlyNJVMUiFAb3QHaEK&pid=Api&P=0');}
+            .portfolio div:nth-child(4){background-image: url('https://tse4.mm.bing.net/th?id=OIP.nwVIawDjDYtZ5VhW9kTqOgHaE_&pid=Api&P=0');}
+            .clients{
+                width: 90%;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin: auto;
+            }
+            .clients div{
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .clients div:nth-child(1){background-image: url('https://tse1.mm.bing.net/th?id=OIP.K9nU1z0nTYFuk1V63ebmZwAAAA&pid=Api&P=0');}
+            .clients div:nth-child(2){background-image: url('https://tse2.mm.bing.net/th?id=OIP.tDeLEm5iQ3aOujWCKmQk4wAAAA&pid=Api&P=0');}
+            .clients div:nth-child(3){background-image: url('https://tse2.mm.bing.net/th?id=OIP.PNkcf0xCquNiGHJVBB6QPQHaF9&pid=Api&P=0');}
+            .clients div:nth-child(4){background-image: url('https://tse4.mm.bing.net/th?id=OIP.cpbtKm0mAezT2dzO6ib_swAAAA&pid=Api&P=0');}
+            .clients div:nth-child(5){background-image: url('https://tse4.mm.bing.net/th?id=OIP.E3hvFYOzbN-v7MwhAuGh7AHaFU&pid=Api&P=0');}
+            .clients div:nth-child(6){background-image: url('https://tse4.mm.bing.net/th?id=OIP.ZR4geT06jFSFzmiKK7G-4wHaGJ&pid=Api&P=0');}
+            .clients div:nth-child(7){background-image: url('https://tse1.mm.bing.net/th?id=OIP.8__iVohwJlVj5zZngJhgFwHaDJ&pid=Api&P=0');}
+            .contactme{
+                width: 90%;
+                height: fit-content;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            form{
+                width: fit-content;
+                height: fit-content;
+                margin: 50px 0 50px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                padding: 30px;
+                box-shadow: 5px 5px 50px;
+                border: 10px inset lightblue;
+                background-color: lightgray;
+            }
+            form textarea{
+                resize: none;
+                font-family: arial;
+                width: 100%;
+            }
+            form div{
+                display: flex;
+                width: 100%;
+                height: fit-content;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            form div input,form div textarea{
+                font-family: arial;
+                margin: 20px 0 0 0;
+                font-size: 1.4em;
+                padding: 10px;
+                width: 100%;
+            }
+            form input[type="submit"]{
+                color: red;
+                background-color: rgb(0, 255, 200);
+                width: 100%;
+            }
+            .contactme>div{
+                width: max-content;
+                height: fit-content;
+            }
+            h2{
+                font-family: sans-serif;
+                font-size: 2em;
+            }
+            h4{
+                font-family: cursive;
+                color: gray;
+            }
+    </style>
+    <script>
+        function fun(){
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message= document.getElementById("message").value;
+            if(name=="" || email=="" || message==""){
+                alert("Fill the form properly.");
+            }
+            else{
+                alert("Mail sent successfully.");
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="img">SRIRAM</div>
+            <div class="links">
+                <a href="#content">HOME</a>
+                <a href="#edu">EDUCATION</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#languages">LANGUAGES</a>
+                <a href="#profile">PROFILE</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#clients">CLIENTS</a>
+                <a href="#contacts">CONTACTS</a>
+            </div>
+        </div>
+        <div class="content" id="content">
+                <p>HELLO , I AM </p>
+                <p>SRIRAM.</p>
+                <p>Full stack Web developer</p>
+        </div>
+        <div class="about">
+            <p align="center"><b>ABOUT ME</b></p><hr>
+        </div>
+        <div class="aboutme">
+            <div class="text">
+               <p> The company itself is a very successful company. But in rejecting what to do in time to be spared the pain wisely? We accuse him of trying to refuse the laborious exercise. The pleasures of the times are ours, and our choice of pains, sufferings, pains, troubles, pains, is hard to follow in some of life, and it is necessary to bear them when they are hindered by the ease with which they are here to be borne.</p>
+
+<p>If the customer is very smart, he or she will be able to achieve the desired result. With pleasure, shall I open the words? Aspernatur further rejects expedients and the pain they fall upon, he criticizes them, they provide for them, indeed they are softened. He flees from laborious pleasure, but I will explain my forgiveness with all hatred and accept it less because you see the blessed, some advantages never know the pain of the words of the accusers, the consequences of which no one is repulsed by the training of times. Anyone can make it happen for us!</p>
+                <hr>
+            </div>
+            <div class="image">
+                <div class="social">
+                    <a href=""><img src="https://tse3.mm.bing.net/th?id=OIP.z69Dl5ZFVKXijkw0FuZiMwHaHa&pid=Api&P=0" alt=""></a>
+                    <a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.BNM_KAkGcIe2olzqW357lgAAAA&pid=Api&P=0" alt=""></a>
+                    <a href=""><img src="https://tse2.mm.bing.net/th?id=OIP.PXTov9TveYX3Upu592UOygHaHa&pid=Api&P=0" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <p align="center"><b>EDUCATION</b></p><hr>
+        </div>
+        <div class="edu" id="edu">
+            <div class="table">
+                <table border="">
+                    <thead>
+                        <tr>
+                            <th>EDUCATION</th>
+                            <th>INSTITUTION</th>
+                            <th>YEAR OF STUDY</th>
+                            <th>PERCENTAGE/CGPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B.Tech ( C.S.E )</td>
+                            <td>Aditya Engineering College , Surampalem</td>
+                            <td>2022-2026</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Intermediate( M.P.C )</td>
+                            <td>SRI CHAITANYA JR COLLEGE, Kakinnada</td>
+                            <td>2020-2022</td>
+                            <td>96.8%</td>
+                        </tr>
+                        <tr>
+                            <td>S.S.C</td>
+                            <td>SSV.EM.school,jaggampeta</td>
+                            <td>2019-2020</td>
+                            <td>10 cgpa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="about">
+            <p align="center" id="skills"><b>SKILLS</b></p><hr>
+        </div>
+        <div class="skills">
+            <div class="s1"><p style="position: relative;left: 100%;">95%</p></div>
+            <div class="s2"><p style="position: relative;left: 100%;">70%</p></div>
+            <div class="s3"><p style="position: relative;left: 86%;">60%</p></div>
+            <div class="s4"><p style="position: relative;left: 100%;">75%</p></div>
+            <div class="s5"><p style="position: relative;left: 88%;">40%</p></div>
+            <div class="s6"><p style="position: relative;left: 78%;">92%</p></div>
+            <div class="s7"><p style="position: relative;left: 100%;">70%</p></div>
+            <div class="s8"><p style="position: relative;left: 93%;">79%</p></div>
+        </div>
+        <div class="about">
+            <p align="center" id="skills"><b>LANGUAGES KNOWN</b></p><hr>
+        </div>
+        <div class="languages" id="languages">
+                <p>ENGLISH</p>
+                <p>हिंदी</p>
+                <p>తెలుగు</p>
+                <p>español</p>
+                <p>日本語</p>
+                <p>中文</p>
+                <p>русский</p>
+                <p>한국어</p>
+        </div>
+        <div class="about">
+            <p align="center" id="profile"><b>PROFILE</b></p><hr>
+        </div>
+        <div class="profile">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="about">
+            <p align="center" id="portfolio"><b>PORTFOLIO</b></p><hr>
+        </div>
+        <div class="portfolio">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="about">
+            <p align="center" id="clients"><b>CLIENTS</b></p><hr>
+        </div>
+        <div class="clients">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="about">
+            <p align="center" id="contacts"><b>CONTACT ME</b></p><hr>
+        </div>
+        <div class="contactme">
+            <form action="">
+                <div class="contacts" id="contacts">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="E-mail" name="" id="" required>
+                    <input type="text" placeholder="Subject" >
+                    <textarea placeholder="Messaege" id="message" name="" id="" cols="30" rows="7" required></textarea>
+                    <input type="submit" value="SUBMIT" onclick="fun()">
+                </div>
+            </form>
+            <div class="details">
+                <h2>L.Sriram Sai </h2>
+                <h4>Full Stack Web Developer</h4>
+                <h2>Phone</h2>
+                <h4>+91 7207559694</h4>
+                <h2>Email</h2>
+                <h4>sriramlaggisetti@gmail.com</h4>
+            </div>
+        </div>
+    </body>
+</html>

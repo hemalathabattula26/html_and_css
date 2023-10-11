@@ -1,0 +1,118 @@
+.main
+{
+	height: 800px;
+	width: 1200px;
+}
+.sub1
+{
+	height: 400px;
+	width: 1200px;
+}
+.sub1_1
+{
+	height: 400px;
+	width: 600px;
+	float: left;
+	background-color: black;
+}
+.sub1_2
+{
+	height: 400px;
+	width: 600px;
+	float: right;
+}
+.suba
+{
+	height: 200px;
+	width: 600px;
+}
+.suba_1
+{
+	height: 200px;
+	width: 300px;
+	float: left;
+	background-color: gold;
+}
+.suba_2
+{
+	height: 200px;
+	width: 300px;
+	float: right;
+	background-color: #2d0e34;
+}
+.subb
+{
+	height: 200px;
+	width: 600px;
+}
+.subb_1
+{
+	height: 200px;
+	width: 300px;
+	float: left;
+	background-color: brown;
+}
+.subb_2
+{
+	height: 200px;
+	width: 300px;
+	float: right;
+	background-color: darkslategrey;
+}
+.sub2
+{
+	height: 400px;
+	width: 1200px;
+}
+.sub2_1
+{
+	height: 400px;
+	width: 600px;
+	float: left;
+}
+.subc
+{
+	height: 200px;
+	width: 600px;
+}
+.subc_1
+{
+	height: 200px;
+	width: 300px;
+	float: left;
+	background-color: bisque;
+}
+.subc_2
+{
+	height: 200px;
+	width: 300px;
+	float: right;
+	background-color: #A7727D;
+}
+.subd
+{
+	height: 200px;
+	width: 600px;
+}
+.subd_1
+{
+	height: 200px;
+	width: 300px;
+	float: left;
+	background-color: maroon;
+}
+.subd_2
+{
+	height: 200px;
+	width: 300px;
+	float: right;
+	background-color: grey;
+}
+#sub2_2
+{
+	height: 400px;
+	width: 600px;
+	float: right;
+	background-color: #AA5656;
+	< border: 5px solid black;
+}

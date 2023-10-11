@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<style type="text/css">
+		h1{
+			font-color:black;
+			background-color: pink;
+		}
+		fieldset{
+			background-color: skyblue;
+			padding: 50px;
+			padding-right: 50px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset> <legend>
+			<h1>
+				<u>Student Registration Form</u>
+			</h1>
+		</legend> 
+		<div>
+		<label>Name:</label>
+			<input type="text" placeholder="Full Name">
+		</div><br>
+		<div>
+			<label>Father's Name:</label>
+			<input type="text" placeholder="Father's Full Name">
+		</div><br>
+		<div>
+			<label>Mother's Name:</label>
+			<input type="text" placeholder="Mother's Full Name">
+		</div><br>
+		<div>
+			<label>Phone Number:</label>
+			<input type="Number" placeholder="enter valid phone number">
+		</div><br>
+		<div>
+			<label>Email Id:</label>
+			<input type="email" name="my email" placeholder="Email">
+		</div><br>
+		<div>
+			<label>Gender:</label>
+			Male<input type="radio" name="Gender"><br>
+			Female<input type="radio" name="Gender"><br>
+			others<input type="radio" name="Gender">
+		</div><br>
+		<div>
+			<label>Date Of Birth:</label>
+			<input type="date" name="">
+		</div><br>
+		<div>
+			<label>Address:</label>
+			<input type="text" name="" placeholder="Address">
+		</div><br>
+		<div>
+			<label>Blood Group:</label>
+			<select name="drop-down">
+				<option value="A+">A positive</option>
+				<option value="B-">B negative</option>
+				<option value="B+">B positive</option>
+				<option value="A-">A negative</option>
+				<option value="AB+">AB positive</option>
+				<option value="AB-">AB negative</option>
+				<option value="O+">O positive</option>
+				<option value="O-">O negative</option>
+			</select>
+		</div>
+		<div>
+			<label>Department:</label>
+			CSE<input type="radio" name="Department">
+			IT<input type="radio" name="Department">
+			AIML<input type="radio" name="Department">
+			ECE<input type="radio" name="Department">
+			DS<input type="radio" name="Department">
+			EEE<input type="radio" name="Department">
+			MECH<input type="radio" name="Department">
+		</div>
+		<div>
+			<label>Course:</label><br>
+			C<input type="checkbox" name="Course"><br>
+			Python<input type="checkbox" name="Course"><br>
+			Java<input type="checkbox" name="Course"><br>
+			Web development<input type="checkbox" name="Course"><br>
+			C++<input type="checkbox" name="Course"><br>
+		</div><br>
+		<div>
+			<label>Photo:</label>
+			<input type="file" name=""><br>
+		</div><br>
+		<div>
+			<input type="submit" name="">
+			<input type="reset" name="">
+		</div>
+	</fieldset>
+	</form>
+</body>
+</html>

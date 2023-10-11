@@ -1,0 +1,20 @@
+.main
+		{
+			height: 800px;
+			width: 800px;
+			background-color: black;
+		}
+		.sub1
+		{
+			height: 800px;
+			width: 400px;
+			background-color: yellow;
+			float: left;
+		}
+		.sub2
+		{
+			height: 800px;
+			width: 400px;
+			background-color: pink;
+			float: right;
+		}

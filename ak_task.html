@@ -1,0 +1,680 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<title>My Portfolio</title>
+	<style type="text/css">
+
+	
+
+	.heading
+	{
+		
+		height: 60px;
+		width: 100%;
+	}	
+	.heading .name h1
+	{
+		margin-top: 0px;
+		float: left;
+		color: darkgreen;
+		margin-left: 20px;
+
+	}
+	.heading .menu a
+	{
+		float: right;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-right: 30px;
+		text-decoration: none;
+		color: black;
+		padding-left: 5px;
+		text-transform: uppercase;
+	}
+
+	.image 
+	{
+		height: 550px;
+		width: 96%;
+		margin-left: 2%;
+		
+	}
+	.image h1
+	{
+		position: absolute;
+		margin-left: 150px;
+		margin-top: 70px;
+		color: yellow;
+		font-size: 50px;
+	}
+
+	.image input[type=submit]
+	{
+		position: absolute;
+		height: 40px;
+		width: 200px;
+		border-radius: 20px;
+		margin-left: 250px;
+		margin-top: 300px;
+		border-color: blue;
+		background-color: blue;
+		color: white;
+	}
+	
+
+	.About 
+	{
+		height: 400px;
+		width: 95%;
+	    margin-left: 50px;
+	}
+
+	.About .title
+	{
+		height: 400px;
+		width: 50%;
+		float: left;
+		border-radius: 20px;
+		
+	}
+
+	.About .image
+	{
+		height: 400px;
+		width: 30%;
+		margin-right: 20px;
+		float: left;
+		
+		
+	}
+	.About .media
+	{
+		height: 400px;
+		width: 10%;
+		margin-right: 80px;
+		padding-top: 30px;
+		float: right;
+		
+	}
+	.About .image img
+    {
+    	height: 100%;
+    	width: 90%;
+    	margin-left: 10px;
+    }
+    .Education
+    {
+    	height: 400px;
+    	width: 90%;
+    	margin-left: 4%;
+
+    }
+    .Education .one 
+    {
+    	height: 400px;
+    	width: 30%;
+    	float: left;
+
+    }
+    .Education .two
+    {
+    	height: 400px;
+    	width: 30%;
+    	margin-left: 60px;
+    	
+    	float: left;
+
+    }
+    .Education .three
+    {
+    	height: 400px;
+    	width: 30%;
+    	
+    	float: right;
+
+    }
+
+    .Skills
+    {
+    	height: 400px;
+    	width: 80%;
+    	margin-left: 10%;
+
+
+    } 
+
+
+    .Skills .one 
+    {
+    	height: 400px;
+    	width: 48%;
+    	
+    	float: left;
+
+    }
+    .Skills .one .one_1
+    {
+    	width: 80%;
+    	height: 10px;
+    	border-radius: 10px;
+    	background-color: purple;
+    }
+
+    .Skills .one .one_2
+    {
+    	width: 80%;
+    	height: 10px;
+    	border-radius: 10px;
+    	background-color: purple;
+    }
+
+    .Skills .one .one_3
+    {
+    	width: 80%;
+    	height: 10px;
+    	border-radius: 10px;
+    	background-color: purple;
+    }
+
+    .Skills .one .one_4
+    {
+    	width: 80%;
+    	height: 10px;
+    	border-radius: 10px;
+    	background-color: purple;
+    }
+    .Skills .two
+    {
+    	height: 400px;
+    	width: 48%;
+    	float: right;
+
+    }
+
+    .Skills .two .two_1
+    {
+    	width: 80%;
+    	height: 10px;
+    	border-radius: 10px;
+    	background-color: purple;
+    }
+
+    .Skills .two .two_2
+    {
+    	width: 80%;
+    	height: 10px;
+    	border-radius: 10px;
+    	background-color: purple;
+    }
+
+    .Skills .two .two_3
+    {
+    	width: 80%;
+    	height: 10px;
+    	border-radius: 10px;
+    	background-color: purple;
+    }
+    .Skills .two .two_4
+    {
+    	width: 80%;
+    	height: 10px;
+    	border-radius: 10px;
+    	background-color: purple;
+    }--!>
+    .Experience
+    {
+    	height: 800px;
+    	width: 80%;
+    	margin-left: 10%;
+
+    }
+    .Experience .one 
+    {
+    	height: 800px;
+    	width: 48%;
+    	float: left;
+
+    }
+    .Experience .two
+    {
+    	height: 800px;
+    	width: 48%;
+    	float: right;
+
+    }
+    .Profiles
+    {
+    	height: 300px;
+    	width: 80%;
+    	padding-left: 10%;
+    	margin-left: 10%;
+    	
+    	margin-right: 10%;
+
+    }
+    .Profiles .one 
+    {
+    	height: 150px;
+    	width: 90%;
+    	
+    }
+
+    .Profiles .one .one_1
+    {
+    	height: 150px;
+    	width: 25%;
+    	
+    	float: left;
+    }
+    .Profiles .one .one_2
+    {
+    	height: 150px;
+    	width: 25%;
+    	
+    	float: left;
+    }
+    .Profiles .one .one_3
+    {
+    	height: 150px;
+    	width: 25%;
+    	
+    	float: left;
+    }
+    .Profiles .one .one_4
+    {
+    	height: 150px;
+    	width: 25%;
+    	
+    	float: right;
+    }
+    .Profiles .two
+    {
+    	height: 150px;
+    	width: 90%;
+    	
+    	
+    }
+
+     .Profiles .two .two_1
+    {
+    	height: 150px;
+    	width: 25%;
+    	
+    	float: left;
+    }
+
+    .Profiles .two .two_2
+    {
+    	height: 150px;
+    	width: 25%;
+    	
+    	float: left;
+    }
+   .Profiles .two .two_3
+    {
+    	height: 150px;
+    	width: 25%;
+    	
+    	float: left;
+    }
+    .Profiles .two .two_4
+    {
+    	height: 150px;
+    	width: 25%;
+    	
+    	float: right;
+    }
+
+     .Portfolio
+    {
+    	height: 500px;
+    	width: 90%;
+    	margin-left: 5%;
+    	
+    }
+    .Portfolio .one 
+    {
+    	height: 500px;
+    	width: 32%;
+    	margin-right: 20px;
+    	float: left;
+    }
+    .Portfolio .one  .one_1
+    {
+    	height: 245px;
+    	width: 100%;
+    	 
+    	margin-bottom: 5px;
+    	
+    }
+    .Portfolio .one .one_2
+    {
+    	height: 245px;
+    	width: 100%;
+    	
+    	
+    }
+    .Portfolio .two
+    {
+    	height: 500px;
+    	width: 32%;
+        
+        float: left;
+    }
+    .Portfolio .three
+    {
+    	height: 500px;
+    	width: 32%;
+    	float: right;
+    }
+
+    .Portfolio .three  .three_1
+    {
+    	height: 245px;
+    	width: 100%;
+    	
+    	margin-bottom: 5px;
+    	
+    }
+    .Portfolio .three .three_2
+    {
+    	height: 245px;
+    	width: 100%;
+    	
+    	
+    }
+
+    .Clients
+    {
+    	height: 80px;
+    	width: 95%;
+    	margin-left: 2%;
+    	
+    }
+    
+     .Clients .one
+    {
+    	height: 70px;
+    	width: 15%;
+    	margin-right: 25px;
+    	float: left;
+    }
+     .Clients .two
+    {
+    	height: 70px;
+    	width: 15%;
+    	margin-right: 25px;
+    	float: left;
+    }
+     .Clients .three
+    {
+    	height: 70px;
+    	width: 15%;
+    	margin-right: 25px;
+    	float: left;
+    }
+     .Clients .four
+    {
+    	height: 70px;
+    	width: 15%;
+    	margin-right: 25px;
+    	float: left;
+    }
+     .Clients .five
+    {
+    	height: 70px;
+    	width: 15%;
+    	margin-right: 25px;
+    	float: left;
+    }
+     .Clients .six
+    {
+    	height: 70px;
+    	width: 15%;
+    	float: right;
+    }
+
+
+    .Contact_Us
+    {
+    	height: 500px;
+    	width: 80%;
+    	margin-left: 10%;
+    	
+    }
+    .Contact_Us .one
+    {
+    	height: 500px;
+    	width: 50%;
+    	float: left;
+    }
+
+    .Contact_Us .one input[type=text]
+    {
+    	height: 30px;
+    	width: 400px;
+    	margin-top: 20px;
+    	margin-left: 40px;
+    	border-radius: 5px;
+    }
+    .Contact_Us .one input[type=email]
+    {
+    	height: 30px;
+    	width: 400px;
+    	margin-top: 20px;
+    	margin-left: 40px;
+    	border-radius: 5px;
+    }
+
+    .Contact_Us .one input[type=message]
+    {
+    	height: 200px;
+    	width: 400px;
+    	margin-top: 20px;
+    	margin-left: 40px;
+    	border-radius: 5px;
+    }
+    .Contact_Us .one input[type=submit]
+    {
+    	height: 40px;
+    	width: 200px;
+    	margin-top: 20px;
+    	margin-left: 150px;
+    	background-color: purple;
+    	color: white;
+    	border-color: purple;
+    	border-radius: 10px;
+    }
+
+
+
+    .Contact_Us .two
+    {
+    	height: 500px;
+    	width: 40%;
+    	float: right;
+    	padding-left: 40px;
+    }
+
+    .Footer
+    {
+    	height: 200px;
+    	width: 100%;
+    	background-color: black;
+    }
+    .Footer input[type=submit]
+	{
+		
+		height: 40px;
+		width: 400px;
+		border-radius: 20px;
+		margin-left: 60px;
+		margin-top: 80px;
+		background-color:red;
+		border-color: red;
+		font-size: 20px;
+		font-family: sans-serif;
+		color: white;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="heading" id="heading_2">
+		<div class="name"><h1>Karthikeya A</h1></div>
+		<div class="menu">
+			<a href="#Contact_Us_2">Contact</a>
+			<a href="#Profiles_2">Profile</a>
+			<a href="#Education_2">Education</a>
+			<a href="#Skills_2">Skills</a>
+		</div>
+	</div>
+<div class="image">
+	<h1>Welcome!<br>To My<br>Portfolio</h1>
+	<p>IGNITE CODER @TECHNICAL HUB</p>
+	<img src="nature.jpg" height="100%" width="100%">
+    
+</div>
+<br><br>
+<center><h1>About Me</h1></center><br><hr><br><br>
+<div class="About">
+	<div class="title">
+		<center><h3 style=" padding-top: 30;"><b>Karthikeya Annamraju</b></h3></center>
+
+		<p style="padding: 30px; margin-top: 0px;">Hello There ! I'm<b> Karthikeya Annamraju </b>and I come from a town named Kakinada,and I'm currently pursuing my B.Tech in CSE at AEC.</p>
+		<hr><br>
+		<h2 style="float: left; margin-right: 120px; margin-left: 40px;">Email</h2> 	
+		<p style="float: left; margin-right: 25px; margin-left: 30px; ">+91-7093525079</p>
+		<h2 style="float: left; margin-right: 140px;">Phone</h2 style="float: right;">
+		<p style="float: left; margin-right: 30px;">22a91a05a1@aec.edu.in</p style="float: right;"> <h4 style="margin-top: 35px;">
+	</div>
+	<div class="image">
+		<img src="ak2.jpg">
+	</div>
+	<div class="media">
+		<i class="fa-brands fa-instagram" style="font-size: 50px"></i><br><br>
+		<i class="fa-brands fa-linkedin" style="font-size: 50px"></i><br><br>
+		<i class="fa-brands fa-whatsapp" style="font-size: 50px"></i>
+	</div>
+</div>
+
+<br><div id="Education_2"></div>
+<center><h1>Education</h1></center><br><hr><br><br>
+<div class="Education" >
+	<div class="one">
+
+		<p style="text-align: center; margin-bottom: 0px;">Primary Education</p>
+        <span style="font-size: 60px; color: purple; margin-top: 0px;">.</span>
+        <hr style="float: right; margin-top: 50px; 
+			border-radius: 20px; height: 2px; background-color: black; width: 342px; background-color: black;">
+  
+		
+		<h4 style="text-align: center;">Little Woods School</h4>
+		<p style="text-align: center;" >Panaspadu,ADB Road,Kakinada</p><br>
+		
+	</div>
+	<div class="two">
+		<p style="text-align: center; margin-bottom: 0px;">Secondary Education</p>
+        <span style="font-size: 60px; color: purple; margin-top: 0px;">.</span>
+        <hr style="float: right; margin-top: 50px; 
+			border-radius: 20px; height: 2px; background-color: black; width: 342px; background-color: black;">
+  
+
+		<h4 style="text-align: center;">Lakshya International School</h4>
+		<p style="text-align: center;">Unduru,Kakinada</p><br>
+		
+	</div>
+	<div class="three">
+
+		<p style="text-align: center; margin-bottom: 0px;">B.Tech in CSE</p>
+        <span style="font-size: 60px; color: purple; margin-top: 0px;">.</span>
+        <hr style="float: right; margin-top: 50px; 
+			border-radius: 20px; height: 2px; background-color: black; width: 342px; background-color: black;">
+
+		<h4 style="text-align: center;">Aditya Engineering College</h4>
+		<p style="text-align: center;">Surampalem,Andhra Pradesh</p><br>
+		
+	</div>
+</div>
+<br><br><div id="Skills_2"></div>
+<center><h1>Skills</h1></center><br><hr><br><br>
+<div class="Skills" >
+	<div class="one">
+		<h3>ADOBE PHOTOSHOP</h3>
+		<div class="one_1"><hr style="background-color: blue; width: 90%; height: 90%; margin-left: 0px;"><h3 style="text-align: right; margin-top: -26px; margin-right: -50px;">90%</h3></div>
+		<h3>ADOBE ILLUSTRATOR</h3>
+		<div class="one_2"><hr style="background-color: blue; width: 80%; height: 90%; margin-left: 0px;"><h3 style="text-align: right; margin-top: -26px; margin-right: -50px;">80%</h3></div>
+		<h3>ADOBE AFTER EFFECT</h3>
+		<div class="one_3"><hr style="background-color: blue; width: 70%; height: 90%; margin-left: 0px;"><h3 style="text-align: right; margin-top: -26px; margin-right: -50px;"">70%</h3></div>
+		<h3>VIDEO EDITING</h3>
+		<div class="one_4"><hr style="background-color: blue; width: 90%; height: 90%; margin-left: 0px;"><h3 style="text-align: right; margin-top: -26px; margin-right: -50px;"" >90%</h3></div>
+	</div>
+	<div class="two">
+		<h3>HTML 5</h3>
+		<div class="two_1"><hr style="background-color: blue; width: 96%; height: 90%; margin-left: 0px;"><h3 style="text-align: right; margin-top: -26px; margin-right: -50px;"">96%</h3></div>
+		<h3>CSS 3 ANIMATION</h3>
+		<div class="two_2"><hr style="background-color: blue; width: 98%; height: 90%; margin-left: 0px;"><h3 style="text-align: right; margin-top: -26px; margin-right: -50px;"">98%</h3></div>
+		<h3>COMMUNICATION</h3>
+		<div class="two_3"><hr style="background-color: blue; width: 85%; height: 90%; margin-left: 0px;"><h3 style="text-align: right; margin-top: -26px; margin-right: -50px;"">85%</h3></div>
+		<h3>CREATIVITY</h3>
+		<div class="two_4"><hr style="background-color: blue; width: 90%; height: 90%; margin-left: 0px;"><h3 style="text-align: right; margin-top: -26px; margin-right: -50px;"">90%</h3></div>
+	</div>
+</div>
+
+<br><br><div id="Experience_2"></div>
+<center><h1>Experience</h1></center><br><hr><br><br>
+<div class="Experience" >
+	</div>
+	<p style="position: absolute; font-size:70px; solid purple; left: 667px; margin-top: -60px;">.</p>
+    <hr style="position: absolute; height: 230px; border-left: 2px solid purple; left: 50%;"><br>
+    <p style="position: absolute; font-size:70px; solid purple; left: 667px; margin-top: -60px; margin-top: 190px;">.</p>
+    <hr style="position: absolute; height: 230px; border-left: 2px solid purple; left: 50%; margin-top: 262px;"><br>
+    <p style="position: absolute; font-size:70px; solid purple; left: 667px; margin-top: -60px; margin-top: 450px;">.</p>
+    <hr style="position: absolute; height: 200px; border-left: 2px solid purple; left: 50%; margin-top: 520px;">
+
+	<div class="two">
+		<h2>2020-Present</h2>
+		<p>Graphics Designer</p>
+		<h3>The Global Hub</h3>
+		<p>India</p>
+		<p>This is my job as a Graphics Designer. </p><br>
+		<h2>2021-Present</h2>
+		<p>Digital Marketer</p>
+		<h3>Google</h3>
+		<p>India</p>
+		<p></p><br>
+		<h2>2018-Present</h2>
+		<p></p>
+		<h3>HOPLON TECH LIMITED</h3>
+		<p>New York City, USA</p>
+		<p> uis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore er fugiat nulla pari</p><br>
+	</div>
+</div><br><br>
+
+
+<br><br><div  id="Clients_2"></div>
+<center><h1>Clients</h1></center><br><hr><br><br>
+<div class="Clients">
+	<div class="one"><i class="fa-brands fa-aws" style="font-size:100px;"></i></div>
+	<div class="two"><i class="fa-brands fa-google" style="font-size:100px;"></i></div>
+	<div class="three"><i class="fa-brands fa-square-facebook" style="color: #357efd; font-size:100px;"></i></div>
+	<div class="four"><i class="fa-brands fa-apple" style="font-size: 100px;"></i></div>
+	<div class="five"><i class="fa-brands fa-twitter" style="color: #55d6d8; font-size: 100px;"></i></i></div>
+	<div class="six"><i class="fa-brands fa-yahoo" style="color: #b6c11a; font-size:100px;"></i></div>
+</div>
+
+<br><br><div id="Contact Me 2"></div>
+<center><h1>Contact Me </h1></center><br><hr><br><br>
+<div class="Contact_Us" >
+	<div class="one">
+	<input type="text" name="Name" placeholder="Name*"><br>
+	<input type="Email" name="Email" placeholder="Email*"><br>
+	<input type="text" name="subject" placeholder="Subject"><br>
+	<input type="message" name="message" placeholder="Message"><br>
+	<input type="submit" name="submit" value="Submit">
+	</div>
+</body>
+</html>
